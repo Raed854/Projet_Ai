@@ -1,0 +1,82 @@
+.sanguine-page { display: flex; min-height: 100vh; background: #f5f9fc; color: #172b45; }
+.sanguine-main { flex: 1; min-width: 0; padding: 32px 4%; }
+.sanguine-topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid #dfeaf3; }
+.sanguine-topbar h1 { margin: 0; color: #123a62; font-size: clamp(26px, 3vw, 36px); letter-spacing: -1px; }
+.sanguine-eyebrow { margin: 0 0 10px; color: #1fa5b8; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.sanguine-history-button { flex: 0 0 auto; padding: 11px 16px; border: 0; border-radius: 8px; background: #123a62; color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.sanguine-history-button:hover { background: #1b5688; }
+.sanguine-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 24px; margin-top: 28px; align-items: start; }
+.sanguine-form, .sanguine-result { border: 1px solid #e2ebf4; border-radius: 16px; background: #fff; box-shadow: 0 10px 24px rgba(17, 75, 117, .05); }
+.sanguine-form { padding: 26px; }
+.sanguine-result { padding: 26px 22px; }
+
+/* Form */
+.sanguine-form h2 { margin: 0; color: #123a62; font-size: 18px; }
+.sanguine-result-header h2 { margin: 0; color: #123a62; font-size: 22px; }
+.sanguine-section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.sanguine-head-actions { display: flex; gap: 6px; }
+.sanguine-link-button { padding: 7px 10px; border: 1px solid #cfe2ef; border-radius: 7px; background: #fff; color: #1469ad; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.sanguine-link-button:hover { background: #f2f8fd; }
+.sanguine-form label { display: flex; flex-direction: column; gap: 7px; color: #45607c; font-size: 13px; font-weight: 600; }
+.sanguine-form input[type="text"], .sanguine-form input[type="number"], .sanguine-form select { width: 100%; box-sizing: border-box; padding: 10px 11px; border: 1px solid #dfeaf4; border-radius: 8px; background: #fbfcfe; color: #123a62; font: inherit; font-size: 14px; }
+.sanguine-form input:focus, .sanguine-form select:focus { outline: none; border-color: #44c5d7; box-shadow: 0 0 0 3px rgba(68,197,215,.12); }
+.sanguine-groupe { margin: 20px 0 0; padding: 0; border: 0; }
+.sanguine-groupe legend { margin-bottom: 10px; padding: 0; color: #123a62; font-size: 15px; font-weight: 700; }
+.sanguine-params { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.sanguine-param-label { color: #38536e; }
+.sanguine-input-unit { display: flex; align-items: center; border: 1px solid #dfeaf4; border-radius: 8px; background: #fbfcfe; }
+.sanguine-input-unit:focus-within { border-color: #44c5d7; box-shadow: 0 0 0 3px rgba(68,197,215,.12); }
+.sanguine-form .sanguine-input-unit input { border: 0; background: transparent; box-shadow: none; }
+.sanguine-input-unit span { padding-right: 10px; color: #91a0af; font-size: 13px; white-space: nowrap; }
+.sanguine-form small { color: #91a0af; font-size: 12px; font-weight: 400; }
+.sanguine-api-info { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding: 11px 12px; border-radius: 8px; background: #f0faf9; color: #537486; font-size: 13px; line-height: 1.4; }
+.sanguine-api-info > span:first-child { display: grid; flex: 0 0 auto; place-items: center; width: 19px; height: 19px; border-radius: 50%; background: #5ccfc3; color: #fff; font-weight: 700; }
+.sanguine-api-error { margin: 15px 0 0; padding: 10px 12px; border-radius: 7px; background: #fff1f1; color: #bd4545; font-size: 13px; line-height: 1.5; }
+.sanguine-submit { width: 100%; margin-top: 16px; padding: 13px; border: 0; border-radius: 8px; background: linear-gradient(100deg, #1469ad, #1392b8); color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.sanguine-submit:disabled { opacity: .65; cursor: wait; }
+
+/* Result */
+.sanguine-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.sanguine-saved { background: #f2f5f8; color: #58718d; }
+.sanguine-table-wrapper { margin-top: 16px; overflow-x: auto; border: 1px solid #e0edf8; border-radius: 12px; }
+.sanguine-table { width: 100%; border-collapse: collapse; color: #58718d; font-size: 14px; }
+.sanguine-table th { padding: 11px 12px; background: #f7fbff; color: #45607c; font-size: 13px; font-weight: 700; letter-spacing: .4px; text-align: left; text-transform: uppercase; }
+.sanguine-table td { padding: 11px 12px; border-top: 1px solid #e7eff6; white-space: nowrap; }
+.sanguine-table td strong { color: #123a62; }
+.sanguine-box { margin-top: 16px; padding: 16px; border: 1px solid #e0edf8; border-radius: 12px; background: #f7fbff; }
+.sanguine-box h3 { margin: 0 0 8px; color: #123a62; font-size: 16px; }
+.sanguine-box .sanguine-api-error { margin: 0; }
+.sanguine-avertissement { margin: 14px 0 0; color: #899bb0; font-size: 13px; line-height: 1.6; }
+.sanguine-empty-result { display: grid; place-items: center; min-height: 260px; text-align: center; }
+.sanguine-empty-icon { display: grid; place-items: center; width: 58px; height: 58px; margin: 0 auto 14px; border-radius: 50%; background: linear-gradient(135deg, #d4f3f6, #dfeef9); color: #0f7695; font-weight: 800; }
+.sanguine-empty-result p { margin: 0; color: #6f8397; font-size: 14px; line-height: 1.7; }
+
+.sanguine-count { margin-left: 6px; padding: 3px 8px; border-radius: 999px; background: #e8f1fb; color: #1469ad; font-size: 13px; }
+.sanguine-input-unit input::placeholder { color: #b5c2cf; }
+.sanguine-result-header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px; }
+.sanguine-result-header > div, .sanguine-result-header > p { flex-basis: 100%; }
+.sanguine-saved { display: inline-flex; padding: 6px 10px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+.sanguine-diagnostic { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; font-size: 14px; font-weight: 700; }
+.sanguine-diagnostic-sain { background: #ebfbf1; color: #237a48; }
+.sanguine-diagnostic-anomalie { background: #fff6e5; color: #94600a; }
+.sanguine-diagnostic-code { margin: 8px 0 0; color: #91a0af; font-size: 13px; }
+.sanguine-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+.sanguine-metric { padding: 11px; border: 1px solid #e0edf8; border-radius: 10px; background: #f7fbff; }
+.sanguine-metric small { display: block; color: #899bb0; font-size: 12px; }
+.sanguine-metric strong { display: block; margin-top: 6px; color: #123a62; font-size: 17px; }
+.sanguine-warning { margin: 12px 0 0; padding: 10px 12px; border-radius: 8px; background: #fff8e8; color: #7a5410; font-size: 13px; line-height: 1.5; }
+.sanguine-probability-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 10px; align-items: center; margin-top: 9px; color: #58718d; font-size: 13px; }
+.sanguine-probability-row strong { color: #123a62; }
+.sanguine-probability-track { grid-column: 1 / -1; height: 6px; overflow: hidden; border-radius: 6px; background: #deebf4; }
+.sanguine-probability-track span { display: block; height: 100%; border-radius: inherit; background: #1469ad; }
+.sanguine-row-mediane td { color: #91a0af; }
+.sanguine-origine-saisie, .sanguine-origine-mediane { display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+.sanguine-origine-saisie { background: #e8f1fb; color: #1469ad; }
+.sanguine-origine-mediane { background: #f2f5f8; color: #7a8ea3; }
+@media (max-width: 1100px) { .sanguine-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) {
+  .sanguine-main { padding: 20px 16px; }
+  .sanguine-topbar { align-items: flex-start; flex-direction: column; }
+  .sanguine-metrics { grid-template-columns: 1fr; }
+  .sanguine-params { grid-template-columns: 1fr 1fr; }
+}

@@ -1,0 +1,77 @@
+.lesion-page { display: flex; min-height: 100vh; background: #f5f9fc; color: #172b45; }
+.lesion-main { flex: 1; padding: 32px 4%; }
+.lesion-topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid #dfeaf3; }
+.lesion-topbar h1 { margin: 0; color: #123a62; font-size: clamp(26px, 3vw, 36px); letter-spacing: -1px; }
+.lesion-eyebrow { margin: 0 0 10px; color: #1fa5b8; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.lesion-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; margin-top: 28px; }
+.lesion-form, .lesion-result { background: white; border: 1px solid #e2ebf4; border-radius: 16px; box-shadow: 0 10px 24px rgba(17, 75, 117, .05); }
+.lesion-form { padding: 28px; }
+.lesion-image-upload { display: flex; align-items: center; flex-direction: column; gap: 8px; min-height: 190px; justify-content: center; padding: 25px; border: 1.5px dashed #9fd5df; border-radius: 12px; background: #f8fdfe; color: #45607c; text-align: center; cursor: pointer; }
+.lesion-image-upload:hover { border-color: #1fa5b8; background: #f2fbfc; }
+.lesion-image-upload strong { color: #123a62; font-size: 16px; }
+.lesion-image-upload > span:last-of-type { color: #899bb0; font-size: 13px; font-weight: 400; }
+.lesion-image-upload input { display: none; }
+.lesion-upload-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #dff5f5; color: #1595a1; font-size: 25px; font-weight: 300; }
+.lesion-image-preview { display: flex; align-items: center; gap: 12px; margin-top: 18px; padding: 10px; border: 1px solid #e0edf5; border-radius: 9px; background: #fbfdff; }
+.lesion-image-preview img { width: 65px; height: 65px; object-fit: cover; border-radius: 7px; }
+.lesion-image-preview strong, .lesion-image-preview span { display: block; }
+.lesion-image-preview strong { overflow: hidden; max-width: 250px; color: #38536e; font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+.lesion-image-preview span { margin-top: 5px; color: #91a0af; font-size: 13px; }
+.lesion-api-info { display: flex; align-items: center; gap: 8px; margin: 18px 0 0; padding: 11px 12px; border-radius: 8px; background: #f0faf9; color: #537486; font-size: 13px; line-height: 1.4; }
+.lesion-api-info > span:first-child { display: grid; width: 19px; height: 19px; flex: 0 0 auto; place-items: center; border-radius: 50%; background: #5ccfc3; color: white; font-weight: 700; }
+.lesion-api-error { margin: 15px 0 0; padding: 10px 12px; border-radius: 7px; background: #fff1f1; color: #bd4545; font-size: 13px; line-height: 1.5; }
+.lesion-submit:disabled { opacity: .65; cursor: wait; }
+.lesion-form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-bottom: 18px; }
+.lesion-form label { display: flex; flex-direction: column; gap: 8px; color: #45607c; font-size: 13px; font-weight: 600; }
+.lesion-form input, .lesion-form select { width: 100%; box-sizing: border-box; padding: 12px 13px; border: 1px solid #dfeaf4; border-radius: 8px; background: #fbfcfe; color: #123a62; font: inherit; font-size: 14px; }
+.lesion-form input:focus, .lesion-form select:focus { outline: none; border-color: #44c5d7; box-shadow: 0 0 0 3px rgba(68,197,215,.12); }
+.lesion-submit { width: 100%; margin-top: 8px; padding: 13px; border: 0; border-radius: 8px; background: linear-gradient(100deg, #1469ad, #1392b8); color: white; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.lesion-result { padding: 26px 22px; }
+.lesion-result-header h2 { margin: 0; color: #123a62; font-size: 22px; }
+.lesion-result-badge { margin-top: 18px; display: inline-block; padding: 8px 12px; border-radius: 999px; background: #ebfbf8; color: #0f9d8c; font-weight: 700; font-size: 13px; }
+.lesion-result-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
+.lesion-result-metric { padding: 12px; border-radius: 10px; background: #f7fbff; border: 1px solid #e0edf8; }
+.lesion-result-metric small { display: block; color: #899bb0; font-size: 12px; }
+.lesion-result-metric strong { display: block; margin-top: 7px; color: #123a62; font-size: 17px; }
+.lesion-recommendation-box { margin-top: 20px; padding: 16px; border-radius: 12px; background: #f7fbff; border: 1px solid #e0edf8; }
+.lesion-recommendation-box h3 { margin: 0 0 8px; color: #123a62; font-size: 16px; }
+.lesion-recommendation-box p { margin: 0; color: #58718d; font-size: 14px; line-height: 1.6; }
+.lesion-probabilities-box { margin-top: 20px; padding: 16px; border: 1px solid #e0edf8; border-radius: 12px; background: #f7fbff; }
+.lesion-probabilities-box h3 { margin: 0 0 14px; color: #123a62; font-size: 16px; }
+.lesion-probability-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 10px; align-items: center; margin-top: 11px; color: #58718d; font-size: 13px; }
+.lesion-probability-row strong { color: #123a62; font-size: 13px; }
+.lesion-probability-track { grid-column: 1 / -1; height: 6px; overflow: hidden; border-radius: 6px; background: #deebf4; }
+.lesion-probability-track span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #20b8c5, #1469ad); }
+.lesion-empty-result { display: grid; place-items: center; min-height: 260px; text-align: center; }
+.lesion-empty-icon { display: grid; place-items: center; width: 58px; height: 58px; margin: 0 auto 14px; border-radius: 50%; background: linear-gradient(135deg, #d4f3f6, #dfeef9); color: #0f7695; font-weight: 800; }
+.lesion-empty-result p { margin: 0; color: #6f8397; font-size: 14px; line-height: 1.7; }
+.lesion-history-box { margin-top: 20px; padding: 16px; border: 1px solid #e0edf8; border-radius: 12px; background: #f7fbff; }
+.lesion-history-box h3 { margin: 0 0 10px; color: #123a62; font-size: 16px; }
+.lesion-history-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 8px 0; border-top: 1px solid #e0edf8; color: #58718d; font-size: 13px; }
+.lesion-history-row:first-of-type { border-top: 0; }
+.lesion-history-row strong { color: #123a62; font-size: 13px; }
+.lesion-history-row small { color: #0f9d8c; font-weight: 700; }
+.lesion-history-empty { margin: 0; color: #6f8397; font-size: 13px; }
+@media (max-width: 900px) { .lesion-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .lesion-topbar { align-items: flex-start; flex-direction: column; } .lesion-form-row { grid-template-columns: 1fr; } .lesion-result-metrics { grid-template-columns: 1fr; } }
+.lesion-gauge { margin-top: 20px; padding: 16px; border: 1px solid #e0edf8; border-radius: 12px; background: #f7fbff; }
+.lesion-gauge-head { display: flex; justify-content: space-between; color: #123a62; font-size: 15px; font-weight: 700; }
+.lesion-gauge-track { height: 10px; margin-top: 10px; overflow: hidden; border-radius: 999px; background: #deebf4; }
+.lesion-gauge-track span { display: block; height: 100%; border-radius: inherit; }
+.lesion-gauge p { margin: 10px 0 0; color: #58718d; font-size: 13px; line-height: 1.6; }
+.lesion-vigilance-faible { color: #2e9e5b; }
+.lesion-vigilance-moderee { color: #c98a0c; }
+.lesion-vigilance-elevee { color: #d64545; }
+.lesion-gauge-track .lesion-vigilance-faible { background: #2e9e5b; }
+.lesion-gauge-track .lesion-vigilance-moderee { background: #e8a317; }
+.lesion-gauge-track .lesion-vigilance-elevee { background: #d64545; }
+.lesion-result-badge.lesion-vigilance-elevee { background: #fff1f1; }
+.lesion-result-badge.lesion-vigilance-moderee { background: #fff8e8; }
+.lesion-disclaimer { margin: 18px 0 0; color: #899bb0; font-size: 13px; line-height: 1.6; }
+.lesion-history-button { flex: 0 0 auto; padding: 11px 16px; border: 0; border-radius: 8px; background: #123a62; color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.lesion-history-button:hover { background: #1b5688; }
+.lesion-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+.lesion-images figure { margin: 0; padding: 8px; border: 1px solid #e0edf8; border-radius: 12px; background: #f7fbff; }
+.lesion-images img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
+.lesion-images figcaption { margin-top: 7px; color: #58718d; font-size: 13px; text-align: center; }
+.lesion-history-row img { width: 34px; height: 34px; object-fit: cover; border-radius: 6px; }

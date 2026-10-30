@@ -1,0 +1,67 @@
+.chest-page { display: flex; min-height: 100vh; background: #f5f9fc; color: #172b45; }
+.chest-main { flex: 1; min-width: 0; padding: 32px 4%; }
+.chest-topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid #dfeaf3; }
+.chest-topbar h1 { margin: 0; color: #123a62; font-size: clamp(24px, 3vw, 34px); letter-spacing: -1px; }
+.chest-eyebrow { margin: 0 0 10px; color: #1fa5b8; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.chest-history-button { flex: 0 0 auto; padding: 11px 16px; border: 0; border-radius: 8px; background: #123a62; color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.chest-history-button:hover { background: #1b5688; }
+.chest-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 24px; margin-top: 28px; align-items: start; }
+.chest-form, .chest-result { border: 1px solid #e2ebf4; border-radius: 16px; background: #fff; box-shadow: 0 10px 24px rgba(17, 75, 117, .05); }
+.chest-form { padding: 28px; }
+.chest-result { padding: 26px 22px; }
+
+/* Form */
+.chest-upload { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 190px; padding: 25px; border: 1.5px dashed #9fd5df; border-radius: 12px; background: #f8fdfe; color: #45607c; text-align: center; cursor: pointer; }
+.chest-upload:hover { border-color: #1fa5b8; background: #f2fbfc; }
+.chest-upload:focus-within { box-shadow: 0 0 0 3px rgba(68,197,215,.25); }
+.chest-upload strong { color: #123a62; font-size: 16px; }
+.chest-upload > span:last-of-type { color: #899bb0; font-size: 13px; }
+.chest-upload input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.chest-upload-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #dff5f5; color: #1595a1; font-size: 25px; font-weight: 300; }
+.chest-preview { display: flex; align-items: center; gap: 12px; margin-top: 18px; padding: 10px; border: 1px solid #e0edf5; border-radius: 9px; background: #fbfdff; }
+.chest-preview img { width: 65px; height: 65px; object-fit: cover; border-radius: 7px; background: #000; }
+.chest-preview strong, .chest-preview span { display: block; }
+.chest-preview strong { overflow: hidden; max-width: 260px; color: #38536e; font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+.chest-preview span { margin-top: 5px; color: #91a0af; font-size: 13px; }
+.chest-api-info { display: flex; align-items: center; gap: 8px; margin-top: 18px; padding: 11px 12px; border-radius: 8px; background: #f0faf9; color: #537486; font-size: 13px; line-height: 1.4; }
+.chest-api-info > span:first-child { display: grid; flex: 0 0 auto; place-items: center; width: 19px; height: 19px; border-radius: 50%; background: #5ccfc3; color: #fff; font-weight: 700; }
+.chest-api-error { margin: 15px 0 0; padding: 10px 12px; border-radius: 7px; background: #fff1f1; color: #bd4545; font-size: 13px; line-height: 1.5; }
+.chest-submit { width: 100%; margin-top: 16px; padding: 13px; border: 0; border-radius: 8px; background: linear-gradient(100deg, #1469ad, #1392b8); color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.chest-submit:disabled { opacity: .65; cursor: wait; }
+
+/* Result */
+.chest-result-header h2 { margin: 0; color: #123a62; font-size: 22px; }
+.chest-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.chest-badge, .chest-saved { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; font-size: 14px; font-weight: 700; }
+.chest-badge-NORMAL { background: #ebfbf1; color: #237a48; }
+.chest-badge-PNEUMONIA { background: #fff1f1; color: #b53b3b; }
+.chest-saved { background: #f2f5f8; color: #58718d; font-size: 13px; }
+.chest-result-text { margin: 10px 0 0; color: #58718d; font-size: 14px; line-height: 1.6; }
+.chest-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.chest-metric { padding: 12px; border: 1px solid #e0edf8; border-radius: 10px; background: #f7fbff; }
+.chest-metric small { display: block; color: #899bb0; font-size: 12px; }
+.chest-metric strong { display: block; margin-top: 6px; color: #123a62; font-size: 17px; }
+.chest-gauge { margin-top: 16px; padding: 16px; border: 1px solid #e0edf8; border-radius: 12px; background: #f7fbff; }
+.chest-gauge-head { display: flex; justify-content: space-between; color: #123a62; font-size: 15px; font-weight: 700; }
+.chest-gauge-track { position: relative; height: 10px; margin-top: 10px; border-radius: 999px; background: #deebf4; }
+.chest-gauge-track > span { display: block; height: 100%; border-radius: inherit; }
+.chest-gauge-seuil { position: absolute; top: -4px; bottom: -4px; width: 2px; margin-left: -1px; background: #172b45; }
+.chest-gauge-scale { display: flex; justify-content: space-between; margin-top: 7px; color: #91a0af; font-size: 12px; }
+.chest-text-NORMAL { color: #237a48; }
+.chest-text-PNEUMONIA { color: #b53b3b; }
+.chest-fill-NORMAL { background: #2e9e5b; }
+.chest-fill-PNEUMONIA { background: #d64545; }
+.chest-analysed { margin: 16px 0 0; padding: 10px; border: 1px solid #e0edf8; border-radius: 12px; background: #f7fbff; }
+.chest-analysed img { display: block; width: 100%; max-width: 280px; aspect-ratio: 1; margin: 0 auto; object-fit: cover; border-radius: 8px; background: #000; }
+.chest-analysed figcaption { margin-top: 8px; color: #58718d; font-size: 13px; text-align: center; }
+.chest-empty-result { display: grid; place-items: center; min-height: 260px; text-align: center; }
+.chest-empty-icon { display: grid; place-items: center; width: 58px; height: 58px; margin: 0 auto 14px; border-radius: 50%; background: linear-gradient(135deg, #d4f3f6, #dfeef9); color: #0f7695; font-weight: 800; }
+.chest-empty-result p { margin: 0; color: #6f8397; font-size: 14px; line-height: 1.7; }
+.chest-disclaimer { margin: 18px 0 0; color: #899bb0; font-size: 13px; line-height: 1.6; }
+
+@media (max-width: 1000px) { .chest-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) {
+  .chest-main { padding: 20px 16px; }
+  .chest-topbar { align-items: flex-start; flex-direction: column; }
+  .chest-metrics { grid-template-columns: 1fr; }
+}

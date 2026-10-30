@@ -1,0 +1,2 @@
+.analysis-result-modal-backdrop{position:fixed;inset:0;z-index:20;background:rgba(8, 30, 55, .58);backdrop-filter:blur(3px)}
+.analysis-result-modal{position:fixed!important;z-index:21!important;top:50%!important;left:50%!important;width:min(760px,92vw)!important;max-height:88vh!important;overflow:auto!important;margin:0!important;transform:translate(-50%,-50%)!important;box-shadow:0 24px 70px rgba(8,40,70,.3)!important}

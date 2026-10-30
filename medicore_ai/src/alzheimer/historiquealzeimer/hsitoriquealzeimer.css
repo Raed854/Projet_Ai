@@ -1,0 +1,25 @@
+.history-page { display: flex; min-height: 100vh; background: #f5f9fc; color: #172b45; }
+.history-main { flex: 1; padding: 32px 4%; }
+.history-topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 20px; border-bottom: 1px solid #dfeaf3; }
+.history-eyebrow { margin: 0 0 10px; color: #1fa5b8; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.history-topbar h1 { margin: 0; color: #123a62; font-size: clamp(26px, 3vw, 36px); letter-spacing: -1px; }
+.history-topbar > div:first-child > p:last-child { margin: 10px 0 0; color: #6f8397; font-size: 14px; }
+.history-card { margin-top: 28px; padding: 26px; border: 1px solid #e2ebf4; border-radius: 16px; background: #fff; box-shadow: 0 10px 24px rgba(17, 75, 117, .05); }
+.history-card-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.history-card-heading h2 { margin: 0; color: #123a62; font-size: 22px; }
+.history-count { padding: 7px 11px; border-radius: 999px; background: #ebfbf8; color: #0f9d8c; font-size: 13px; font-weight: 700; }
+.history-table-wrapper { overflow-x: auto; }
+.history-table { width: 100%; border-collapse: collapse; color: #58718d; font-size: 14px; }
+.history-table th { padding: 13px 15px; background: #f7fbff; color: #45607c; font-size: 13px; font-weight: 700; letter-spacing: .4px; text-align: left; text-transform: uppercase; }
+.history-table td { padding: 16px 15px; border-bottom: 1px solid #e7eff6; white-space: nowrap; }
+.history-table tbody tr:last-child td { border-bottom: 0; }
+.state-badge { display: inline-block; padding: 7px 10px; border-radius: 999px; background: #ebfbf8; color: #0f9d8c; font-size: 13px; font-weight: 700; }
+.history-error { padding: 10px 12px; border-radius: 7px; background: #fff1f1; color: #bd4545; font-size: 13px; }
+.history-empty-state { padding: 45px 20px; text-align: center; }
+.history-empty-icon { display: grid; width: 58px; height: 58px; margin: 0 auto 14px; place-items: center; border-radius: 50%; background: linear-gradient(135deg, #d4f3f6, #dfeef9); color: #0f7695; font-weight: 800; }
+.history-empty-state h3 { margin: 0; color: #123a62; font-size: 18px; }
+.history-empty-state p { margin: 8px 0 18px; color: #6f8397; font-size: 14px; }
+.history-empty-state button { padding: 11px 16px; border: 0; border-radius: 8px; background: linear-gradient(100deg, #1469ad, #1392b8); color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+@media (max-width: 700px) { .history-topbar { align-items: flex-start; flex-direction: column; } .history-card { padding: 18px 12px; } }
+.history-back { flex: 0 0 auto; padding: 11px 16px; border: 0; border-radius: 8px; background: #123a62; color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.history-back:hover { background: #1b5688; }

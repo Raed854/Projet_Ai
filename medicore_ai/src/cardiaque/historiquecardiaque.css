@@ -1,0 +1,43 @@
+.historique-cardiaque-page { display: flex; min-height: 100vh; background: #f5f9fc; color: #172b45; }
+.historique-cardiaque-main { flex: 1; padding: 32px 4%; }
+.historique-cardiaque-topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 20px; border-bottom: 1px solid #dfeaf3; }
+.historique-cardiaque-eyebrow { margin: 0 0 10px; color: #1fa5b8; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.historique-cardiaque-topbar h1 { margin: 0; color: #123a62; font-size: clamp(26px, 3vw, 36px); letter-spacing: -1px; }
+.historique-cardiaque-topbar > div:first-child > p:last-child { margin: 10px 0 0; color: #6f8397; font-size: 14px; }
+.historique-cardiaque-card { margin-top: 28px; padding: 26px; border: 1px solid #e2ebf4; border-radius: 16px; background: #fff; box-shadow: 0 10px 24px rgba(17, 75, 117, .05); }
+.historique-cardiaque-card-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.historique-cardiaque-card-heading h2 { margin: 0; color: #123a62; font-size: 22px; }
+.historique-cardiaque-count { padding: 7px 11px; border-radius: 999px; background: #ebfbf8; color: #0f9d8c; font-size: 13px; font-weight: 700; }
+.historique-cardiaque-table-wrapper { overflow-x: auto; }
+.historique-cardiaque-table { width: 100%; border-collapse: collapse; color: #58718d; font-size: 14px; }
+.historique-cardiaque-table th { padding: 13px 15px; background: #f7fbff; color: #45607c; font-size: 13px; font-weight: 700; letter-spacing: .4px; text-align: left; text-transform: uppercase; }
+.historique-cardiaque-table td { padding: 16px 15px; border-bottom: 1px solid #e7eff6; white-space: nowrap; }
+.historique-cardiaque-table tbody tr:last-child td { border-bottom: 0; }
+.historique-cardiaque-error { padding: 10px 12px; border-radius: 7px; background: #fff1f1; color: #bd4545; font-size: 13px; }
+.historique-cardiaque-empty-state { padding: 45px 20px; text-align: center; }
+.historique-cardiaque-empty-icon { display: grid; width: 58px; height: 58px; margin: 0 auto 14px; place-items: center; border-radius: 50%; background: linear-gradient(135deg, #d4f3f6, #dfeef9); color: #0f7695; font-weight: 800; }
+.historique-cardiaque-empty-state h3 { margin: 0; color: #123a62; font-size: 18px; }
+.historique-cardiaque-empty-state p { margin: 8px 0 18px; color: #6f8397; font-size: 14px; }
+.historique-cardiaque-empty-state button { padding: 11px 16px; border: 0; border-radius: 8px; background: linear-gradient(100deg, #1469ad, #1392b8); color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+@media (max-width: 700px) { .historique-cardiaque-topbar { align-items: flex-start; flex-direction: column; } .historique-cardiaque-card { padding: 18px 12px; } }
+.historique-cardiaque-loading { color: #6f8397; font-size: 14px; }
+.historique-cardiaque-counts { display: flex; flex-wrap: wrap; gap: 6px; }
+.historique-cardiaque-count-anormal { background: #fff6e5; color: #94600a; }
+.historique-cardiaque-sparkline { display: block; width: 110px; height: 32px; }
+.historique-cardiaque-sparkline polyline { fill: none; stroke: #1469ad; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.historique-cardiaque-badge { display: inline-flex; align-items: center; gap: 5px; padding: 6px 10px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+.historique-cardiaque-normal { background: #ebfbf1; color: #237a48; }
+.historique-cardiaque-anormal { background: #fff6e5; color: #94600a; }
+.historique-cardiaque-correct { color: #237a48; font-weight: 700; }
+.historique-cardiaque-incorrect { color: #b53b3b; font-weight: 700; }
+.historique-cardiaque-muted { color: #91a0af; }
+.historique-cardiaque-table code { padding: 3px 6px; border-radius: 5px; background: #f0f5fa; color: #45607c; font-size: 13px; }
+.historique-cardiaque-toggle { padding: 6px 10px; border: 1px solid #cfe2ef; border-radius: 7px; background: #fff; color: #1469ad; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.historique-cardiaque-toggle:hover { background: #f2f8fd; }
+.historique-cardiaque-details > td { background: #fbfdff; white-space: normal; }
+.historique-cardiaque-details-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.historique-cardiaque-details-grid .cardiaque-chart { margin: 0; box-shadow: none; }
+.historique-cardiaque-probabilities h3 { margin: 0; color: #123a62; font-size: 16px; }
+@media (max-width: 900px) { .historique-cardiaque-details-grid { grid-template-columns: 1fr; } }
+.historique-cardiaque-back { flex: 0 0 auto; padding: 11px 16px; border: 0; border-radius: 8px; background: #123a62; color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.historique-cardiaque-back:hover { background: #1b5688; }

@@ -1,0 +1,40 @@
+.historique-chest-page { display: flex; min-height: 100vh; background: #f5f9fc; color: #172b45; }
+.historique-chest-main { flex: 1; padding: 32px 4%; }
+.historique-chest-topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 20px; border-bottom: 1px solid #dfeaf3; }
+.historique-chest-eyebrow { margin: 0 0 10px; color: #1fa5b8; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.historique-chest-topbar h1 { margin: 0; color: #123a62; font-size: clamp(26px, 3vw, 36px); letter-spacing: -1px; }
+.historique-chest-topbar > div:first-child > p:last-child { margin: 10px 0 0; color: #6f8397; font-size: 14px; }
+.historique-chest-card { margin-top: 28px; padding: 26px; border: 1px solid #e2ebf4; border-radius: 16px; background: #fff; box-shadow: 0 10px 24px rgba(17, 75, 117, .05); }
+.historique-chest-card-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.historique-chest-card-heading h2 { margin: 0; color: #123a62; font-size: 22px; }
+.historique-chest-count { padding: 7px 11px; border-radius: 999px; background: #ebfbf8; color: #0f9d8c; font-size: 13px; font-weight: 700; }
+.historique-chest-table-wrapper { overflow-x: auto; }
+.historique-chest-table { width: 100%; border-collapse: collapse; color: #58718d; font-size: 14px; }
+.historique-chest-table th { padding: 13px 15px; background: #f7fbff; color: #45607c; font-size: 13px; font-weight: 700; letter-spacing: .4px; text-align: left; text-transform: uppercase; }
+.historique-chest-table td { padding: 16px 15px; border-bottom: 1px solid #e7eff6; white-space: nowrap; }
+.historique-chest-table tbody tr:last-child td { border-bottom: 0; }
+.historique-chest-error { padding: 10px 12px; border-radius: 7px; background: #fff1f1; color: #bd4545; font-size: 13px; }
+.historique-chest-empty-state { padding: 45px 20px; text-align: center; }
+.historique-chest-empty-icon { display: grid; width: 58px; height: 58px; margin: 0 auto 14px; place-items: center; border-radius: 50%; background: linear-gradient(135deg, #d4f3f6, #dfeef9); color: #0f7695; font-weight: 800; }
+.historique-chest-empty-state h3 { margin: 0; color: #123a62; font-size: 18px; }
+.historique-chest-empty-state p { margin: 8px 0 18px; color: #6f8397; font-size: 14px; }
+.historique-chest-empty-state button { padding: 11px 16px; border: 0; border-radius: 8px; background: linear-gradient(100deg, #1469ad, #1392b8); color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+@media (max-width: 700px) { .historique-chest-topbar { align-items: flex-start; flex-direction: column; } .historique-chest-card { padding: 18px 12px; } }
+.historique-chest-loading { color: #6f8397; font-size: 14px; }
+.historique-chest-counts { display: flex; flex-wrap: wrap; gap: 6px; }
+.historique-chest-count-alert { background: #fff1f1; color: #b53b3b; }
+.historique-chest-thumb { display: block; width: 44px; height: 44px; object-fit: cover; border: 1px solid #e0edf8; border-radius: 8px; background: #000; }
+.historique-chest-table code { padding: 3px 6px; border-radius: 5px; background: #f0f5fa; color: #45607c; font-size: 13px; }
+.historique-chest-toggle { padding: 6px 10px; border: 1px solid #cfe2ef; border-radius: 7px; background: #fff; color: #1469ad; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.historique-chest-toggle:hover { background: #f2f8fd; }
+.historique-chest-details > td { background: #fbfdff; white-space: normal; }
+.historique-chest-details-grid { display: grid; grid-template-columns: minmax(180px, 260px) minmax(0, 1fr); gap: 20px; align-items: start; }
+.historique-chest-details-grid .chest-analysed { margin: 0; }
+.historique-chest-details-grid .chest-result-text { margin: 0; }
+.historique-chest-probabilities { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+.historique-chest-probabilities div { padding: 10px; border: 1px solid #e0edf8; border-radius: 10px; background: #f7fbff; }
+.historique-chest-probabilities small { display: block; color: #899bb0; font-size: 12px; }
+.historique-chest-probabilities strong { display: block; margin-top: 4px; color: #123a62; font-size: 16px; }
+@media (max-width: 800px) { .historique-chest-details-grid { grid-template-columns: 1fr; } }
+.historique-chest-back { flex: 0 0 auto; padding: 11px 16px; border: 0; border-radius: 8px; background: #123a62; color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.historique-chest-back:hover { background: #1b5688; }

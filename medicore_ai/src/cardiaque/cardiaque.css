@@ -1,0 +1,81 @@
+.cardiaque-page { display: flex; min-height: 100vh; background: #f5f9fc; color: #172b45; }
+.cardiaque-main { flex: 1; min-width: 0; padding: 32px 4%; }
+.cardiaque-topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid #dfeaf3; }
+.cardiaque-history-button { flex: 0 0 auto; padding: 11px 16px; border: 0; border-radius: 8px; background: #123a62; color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.cardiaque-history-button:hover { background: #1b5688; }
+.cardiaque-topbar h1 { margin: 0; color: #123a62; font-size: clamp(26px, 3vw, 36px); letter-spacing: -1px; }
+.cardiaque-eyebrow { margin: 0 0 10px; color: #1fa5b8; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.cardiaque-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 24px; margin-top: 28px; align-items: start; }
+.cardiaque-form, .cardiaque-result { border: 1px solid #e2ebf4; border-radius: 16px; background: #fff; box-shadow: 0 10px 24px rgba(17, 75, 117, .05); }
+.cardiaque-form { padding: 26px; }
+.cardiaque-result { padding: 26px 22px; }
+
+/* Form */
+.cardiaque-form h2 { margin: 0; color: #123a62; font-size: 18px; }
+.cardiaque-result-header h2 { margin: 0; color: #123a62; font-size: 22px; }
+.cardiaque-section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.cardiaque-head-actions { display: flex; gap: 6px; }
+.cardiaque-link-button { padding: 7px 10px; border: 1px solid #cfe2ef; border-radius: 7px; background: #fff; color: #1469ad; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.cardiaque-link-button:hover { background: #f2f8fd; }
+.cardiaque-field { display: flex; flex-direction: column; gap: 7px; margin-top: 14px; color: #45607c; font-size: 13px; font-weight: 600; }
+.cardiaque-field:first-of-type { margin-top: 0; }
+.cardiaque-form textarea, .cardiaque-form select { width: 100%; box-sizing: border-box; padding: 10px 11px; border: 1px solid #dfeaf4; border-radius: 8px; background: #fbfcfe; color: #123a62; font: inherit; font-size: 14px; }
+.cardiaque-form textarea { font-family: ui-monospace, Consolas, monospace; font-size: 13px; line-height: 1.5; resize: vertical; }
+.cardiaque-form textarea:focus, .cardiaque-form select:focus { outline: none; border-color: #44c5d7; box-shadow: 0 0 0 3px rgba(68,197,215,.12); }
+.cardiaque-counter { margin: 6px 0 0; color: #237a48; font-size: 13px; font-weight: 700; text-align: right; }
+.cardiaque-counter-bad { color: #b53b3b; }
+.cardiaque-csv { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; color: #6f8397; font-size: 13px; }
+.cardiaque-csv-button { padding: 9px 12px; border: 1.5px dashed #9fd5df; border-radius: 8px; background: #f8fdfe; color: #1595a1; font-size: 13px; font-weight: 700; cursor: pointer; }
+.cardiaque-csv-button:hover { background: #f2fbfc; }
+.cardiaque-csv-button:focus-within { box-shadow: 0 0 0 3px rgba(68,197,215,.25); }
+.cardiaque-csv-button input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.cardiaque-api-info { display: flex; align-items: center; gap: 8px; margin-top: 18px; padding: 11px 12px; border-radius: 8px; background: #f0faf9; color: #537486; font-size: 13px; line-height: 1.4; }
+.cardiaque-api-info > span:first-child { display: grid; flex: 0 0 auto; place-items: center; width: 19px; height: 19px; border-radius: 50%; background: #5ccfc3; color: #fff; font-weight: 700; }
+.cardiaque-api-error { margin: 15px 0 0; padding: 10px 12px; border-radius: 7px; background: #fff1f1; color: #bd4545; font-size: 13px; line-height: 1.5; }
+.cardiaque-submit { width: 100%; margin-top: 16px; padding: 13px; border: 0; border-radius: 8px; background: linear-gradient(100deg, #1469ad, #1392b8); color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.cardiaque-submit:disabled { opacity: .65; cursor: wait; }
+
+/* Result */
+.cardiaque-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.cardiaque-classe-badge, .cardiaque-saved { display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+.cardiaque-normal { background: #ebfbf1; color: #237a48; }
+.cardiaque-anormal { background: #fff6e5; color: #94600a; }
+.cardiaque-saved { background: #f2f5f8; color: #58718d; }
+.cardiaque-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.cardiaque-metric { padding: 12px; border: 1px solid #e0edf8; border-radius: 10px; background: #f7fbff; }
+.cardiaque-metric small { display: block; color: #899bb0; font-size: 12px; }
+.cardiaque-metric strong { display: block; margin-top: 6px; color: #123a62; font-size: 18px; }
+.cardiaque-correct, .cardiaque-incorrect { display: block; margin-top: 4px; font-size: 13px; font-weight: 700; }
+.cardiaque-correct { color: #237a48; }
+.cardiaque-incorrect { color: #b53b3b; }
+.cardiaque-box { margin-top: 16px; padding: 16px; border: 1px solid #e0edf8; border-radius: 12px; background: #f7fbff; }
+.cardiaque-box h3 { margin: 0 0 6px; color: #123a62; font-size: 16px; }
+.cardiaque-probability-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 10px; align-items: center; margin-top: 10px; color: #58718d; font-size: 13px; }
+.cardiaque-probability-row strong { color: #123a62; }
+.cardiaque-probability-track { grid-column: 1 / -1; height: 6px; overflow: hidden; border-radius: 6px; background: #deebf4; }
+.cardiaque-probability-track span { display: block; height: 100%; border-radius: inherit; background: #1469ad; }
+.cardiaque-version { margin: 12px 0 0; color: #91a0af; font-size: 13px; }
+.cardiaque-empty-result { display: grid; place-items: center; min-height: 260px; text-align: center; }
+.cardiaque-empty-icon { display: grid; place-items: center; width: 58px; height: 58px; margin: 0 auto 14px; border-radius: 50%; background: linear-gradient(135deg, #d4f3f6, #dfeef9); color: #0f7695; font-weight: 800; }
+.cardiaque-empty-result p { margin: 0; color: #6f8397; font-size: 14px; line-height: 1.7; }
+
+/* Chart */
+.cardiaque-chart { margin: 24px 0 0; padding: 18px; border: 1px solid #e2ebf4; border-radius: 16px; background: #fff; box-shadow: 0 10px 24px rgba(17, 75, 117, .05); }
+.cardiaque-chart figcaption { margin-bottom: 10px; color: #123a62; font-size: 16px; font-weight: 700; }
+.cardiaque-chart-frame { position: relative; overflow-x: auto; }
+.cardiaque-chart svg { display: block; width: 100%; min-width: 320px; height: auto; }
+.cardiaque-chart-grid { stroke: #e7eff6; stroke-width: 1; }
+.cardiaque-chart-tick { fill: #7a8ea3; font-size: 13px; }
+.cardiaque-chart-axis { fill: #58718d; font-size: 13px; font-weight: 600; }
+.cardiaque-chart-line { fill: none; stroke: #1469ad; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.cardiaque-chart-dot { fill: #1469ad; stroke: #fff; stroke-width: 2; }
+.cardiaque-chart-crosshair { stroke: #9fb3c6; stroke-width: 1; }
+.cardiaque-chart-tooltip { position: absolute; z-index: 1; display: flex; flex-direction: column; gap: 2px; padding: 7px 9px; border: 1px solid #e0edf8; border-radius: 8px; background: #fff; box-shadow: 0 6px 16px rgba(17, 75, 117, .12); color: #58718d; font-size: 13px; white-space: nowrap; pointer-events: none; transform: translate(-50%, calc(-100% - 10px)); }
+.cardiaque-chart-tooltip strong { color: #123a62; }
+.cardiaque-disclaimer { margin: 18px 0 0; color: #899bb0; font-size: 13px; line-height: 1.6; }
+
+@media (max-width: 1100px) { .cardiaque-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) {
+  .cardiaque-main { padding: 20px 16px; }
+  .cardiaque-metrics { grid-template-columns: 1fr; }
+}
