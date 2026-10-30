@@ -1,0 +1,165 @@
+╔════════════════════════════════════════════════════════════════╗
+║                 QU'EST-CE QU'UN FICHIER CSV ?                  ║
+╚════════════════════════════════════════════════════════════════╝
+
+CSV = Comma-Separated Values (Valeurs Séparées par des Virgules)
+
+┌─────────────────────────────────────────────────────────────────┐
+│ C'est comme un tableau Excel mais en format TEXTE SIMPLE        │
+└─────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════╗
+║                    EXEMPLE VISUEL                              ║
+╚════════════════════════════════════════════════════════════════╝
+
+Dans Excel/Google Sheets :
+┌──────┬──────┬──────┬──────┬──────┬─────┬──────┐
+│ Col1 │ Col2 │ Col3 │ Col4 │ Col5 │ ... │Col187│
+├──────┼──────┼──────┼──────┼──────┼─────┼──────┤
+│ 0.98 │ 0.91 │ 0.72 │ 0.46 │ 0.18 │ ... │-0.26 │ ← Battement 1
+│ 0.95 │ 0.88 │ 0.75 │ 0.58 │ 0.38 │ ... │ 0.55 │ ← Battement 2
+│ 0.12 │ 0.24 │ 0.35 │ 0.44 │ 0.51 │ ... │ 0.54 │ ← Battement 3
+└──────┴──────┴──────┴──────┴──────┴─────┴──────┘
+
+Dans un fichier CSV (texte brut) :
+┌─────────────────────────────────────────────────────────────────┐
+│ 0.98,0.91,0.72,0.46,0.18,...,-0.26                             │
+│ 0.95,0.88,0.75,0.58,0.38,...,0.55                              │
+│ 0.12,0.24,0.35,0.44,0.51,...,0.54                              │
+└─────────────────────────────────────────────────────────────────┘
+          ↑
+    Les virgules séparent les valeurs
+
+
+╔════════════════════════════════════════════════════════════════╗
+║              POUR VOTRE PROJET ECG                             ║
+╚════════════════════════════════════════════════════════════════╝
+
+🫀 Chaque LIGNE = 1 battement cardiaque (187 valeurs)
+📊 Chaque VALEUR = amplitude du signal à un instant précis
+
+Exemple d'un battement :
+┌─────────────────────────────────────────────────────────────────┐
+│ Temps →  t1    t2    t3    t4    t5   ...  t187                │
+│ Signal → 0.98, 0.91, 0.72, 0.46, 0.18, ... -0.26               │
+└─────────────────────────────────────────────────────────────────┘
+
+Représentation graphique :
+     ▲
+ 1.0 │     ●
+     │    ●  ●
+ 0.5 │   ●     ●
+     │  ●        ●
+ 0.0 │──●──────────●────────────────────────────────────────►
+     │              ●   ●
+-0.5 │               ● ●
+     │                 ●
+-1.0 │
+     └────────────────────────────────────────────────────
+     0   20   40   60   80  100  120  140  160  187
+
+
+╔════════════════════════════════════════════════════════════════╗
+║                  3 FAÇONS DE TESTER                            ║
+╚════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 1️⃣  BOUTON "EXEMPLE RÉEL"                                       │
+│    → Le plus RAPIDE, un seul clic !                            │
+│    → Charge automatiquement 187 valeurs                        │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 2️⃣  UPLOAD FICHIER CSV                                          │
+│    → Utiliser un fichier test                                  │
+│    → Fichiers fournis : examples.csv, test_simple.csv          │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 3️⃣  GÉNÉRATEUR ALÉATOIRE                                        │
+│    → Créer un signal automatiquement                           │
+│    → Choisir : Normal / Anormal / Aléatoire                    │
+└─────────────────────────────────────────────────────────────────┘
+
+
+╔════════════════════════════════════════════════════════════════╗
+║            COMMENT CRÉER VOTRE PROPRE CSV ?                    ║
+╚════════════════════════════════════════════════════════════════╝
+
+🔹 Méthode 1 : EXCEL / GOOGLE SHEETS
+   1. Ouvrir Excel
+   2. Mettre 187 valeurs sur une ligne
+   3. Fichier → Enregistrer sous → Format CSV
+
+🔹 Méthode 2 : BLOC-NOTES
+   1. Ouvrir le Bloc-notes
+   2. Taper : 0.98,0.91,0.72,...
+   3. Enregistrer avec extension .csv
+
+🔹 Méthode 3 : UTILISER KAGGLE
+   Si vous avez le dataset MIT-BIH, c'est déjà en CSV !
+   → mitbih_train.csv
+   → mitbih_test.csv
+
+
+╔════════════════════════════════════════════════════════════════╗
+║                    FICHIERS FOURNIS                            ║
+╚════════════════════════════════════════════════════════════════╝
+
+📄 examples.csv       → 3 signaux de test
+📄 test_simple.csv    → 1 signal simple pour débuter
+📄 predictions_ecg.csv → Résultats de votre modèle Kaggle
+
+
+╔════════════════════════════════════════════════════════════════╗
+║                      DÉMONSTRATION                             ║
+╚════════════════════════════════════════════════════════════════╝
+
+1. Lancer l'application :
+   → python web_app.py
+
+2. Dans le navigateur (http://localhost:5000)
+
+3. Aller sur l'onglet "Upload fichier CSV"
+
+4. Cliquer "📁 Choisir un fichier CSV"
+
+5. Sélectionner "test_simple.csv"
+
+6. Cliquer "Lancer la prédiction"
+
+7. ✅ Résultat affiché avec :
+   - Classe prédite
+   - Confiance
+   - Graphique du signal
+   - Probabilités
+
+
+╔════════════════════════════════════════════════════════════════╗
+║                   VÉRIFICATION CSV                             ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ BON FICHIER :
+   - Exactement 187 valeurs par ligne
+   - Séparées par des virgules
+   - Valeurs numériques uniquement
+   - Extension .csv
+
+❌ MAUVAIS FICHIER :
+   - Moins de 187 valeurs
+   - Séparateur : point-virgule ou tabulation
+   - Texte dans le fichier
+   - Espaces inutiles
+
+
+╔════════════════════════════════════════════════════════════════╗
+║                  BESOIN D'AIDE ?                               ║
+╚════════════════════════════════════════════════════════════════╝
+
+📚 Consultez les guides :
+   → README_WEB.md          : Guide de base
+   → GUIDE_UTILISATION.md   : Guide détaillé
+   → EXEMPLE_CSV.md         : Explications sur les CSV
+   → AMELIORATIONS.md       : Idées d'amélioration
+
+💡 ASTUCE : Le plus simple est de cliquer sur "Exemple réel" !
